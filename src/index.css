@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://horizons-cdn.hostinger.com/234869e4-f518-4a32-bcd3-28c325d66b7c/8ac4b1a3d098d562c24edb21fbd39a42.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+}
+
+.glass-effect {
+  background: rgba(10, 10, 10, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-gradient {
+  background: linear-gradient(to bottom, rgba(10,10,10,0.7) 0%, rgba(10,10,10,0) 100%);
+}
+
+.shadow-glow-hover {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow-glow-hover:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.home-button-content {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 0 15px rgba(255,255,255,0.3));
+}
+
+.home-button-content:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 25px rgba(14, 184, 225, 0.5));
+}
+
+:root {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222.2 84% 4.9%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 217.2 91.2% 59.8%;
+  --primary-foreground: 222.2 84% 4.9%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 224.3 76.3% 94.1%;
+  --radius: 0.5rem;
+}
